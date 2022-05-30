@@ -30,14 +30,14 @@ public class Dashboard extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dashboard);
         options=findViewById(R.id.gridvi);
-        ArrayList<dashboardoption> dashboardoptionArrayList=new ArrayList<dashboardoption>();
-        dashboardoptionArrayList.add(new dashboardoption("Stocks",R.drawable.stocks));
-        dashboardoptionArrayList.add(new dashboardoption("Mutual Funds",R.drawable.mutualfund));
-        dashboardoptionArrayList.add(new dashboardoption("Crypto",R.drawable.crypto));
-        dashboardoptionArrayList.add(new dashboardoption("Brokers",R.drawable.broker));
-        dashboardoptionArrayList.add(new dashboardoption("Profile",R.drawable.profile));
-        dashboardoptionArrayList.add(new dashboardoption("About Us",R.drawable.aboutus));
-        OptionAdapter op=new OptionAdapter(this,dashboardoptionArrayList);
+        ArrayList<dashboardoption> dasboarddoptionArraylist =new ArrayList<dashboardoption>();
+        dasboarddoptionArraylist.add(new dashboardoption("Stocks",R.drawable.stocks));
+        dasboarddoptionArraylist.add(new dashboardoption("Mutual Funds",R.drawable.mutualfund));
+        dasboarddoptionArraylist.add(new dashboardoption("Crypto",R.drawable.crypto));
+        dasboarddoptionArraylist.add(new dashboardoption("Brokers",R.drawable.broker));
+        dasboarddoptionArraylist.add(new dashboardoption("Profile",R.drawable.profile));
+        dasboarddoptionArraylist.add(new dashboardoption("About Us",R.drawable.aboutus));
+        OptionAdapter op=new OptionAdapter(this, dasboarddoptionArraylist);
         options.setAdapter(op);
         options.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
@@ -111,8 +111,8 @@ class dashboardoption
 class OptionAdapter extends ArrayAdapter<dashboardoption>
 {
 
-    public OptionAdapter(@NonNull Context context, ArrayList<dashboardoption> dashboardoptionArrayList) {
-        super(context,0, dashboardoptionArrayList);
+    public OptionAdapter(@NonNull Context context, ArrayList<dashboardoption> dasboarddoptionArraylist) {
+        super(context,0, dasboarddoptionArraylist);
     }
 
     @NonNull
