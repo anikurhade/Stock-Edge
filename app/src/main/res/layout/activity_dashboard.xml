@@ -23,15 +23,17 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
-        android:id="@+id/logout"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="156dp"
-        android:onClick="Logout"
-        android:text="logout"
-        app:layout_constraintEnd_toEndOf="parent"
+    <GridView
+        android:id="@+id/gridvi"
+        android:layout_width="407dp"
+        android:layout_height="493dp"
+        android:layout_marginTop="30dp"
+        android:background="#B3AE86"
+        android:horizontalSpacing="6dp"
+        android:numColumns="2"
+        android:foreground="#0FEAE8DD"
+        android:verticalSpacing="6dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+        app:layout_constraintTop_toBottomOf="@+id/textView2"></GridView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
