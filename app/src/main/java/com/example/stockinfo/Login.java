@@ -33,7 +33,7 @@ public class Login extends AppCompatActivity {
         password = findViewById(R.id.passwordlgn);
         logn = findViewById(R.id.lgn);
         fAuth = FirebaseAuth.getInstance();
-        pblogn = findViewById(R.id.progressBar);
+        pblogn = findViewById(R.id.pblgn);
     logn.setOnClickListener(new View.OnClickListener() {
         @Override
         public void onClick(View v) {
@@ -67,6 +67,8 @@ public class Login extends AppCompatActivity {
                     }
                     else {
                         Toast.makeText(Login.this, "Error ! " + task.getException().getMessage(), Toast.LENGTH_SHORT).show();
+                        pblogn.setVisibility(View.INVISIBLE);
+
                     }
                 }
             });
