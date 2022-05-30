@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     android:background="#B3AE86"
     tools:context=".Brokers">
+
     <TextView
         android:id="@+id/textView2"
         android:layout_width="194dp"
@@ -20,16 +21,18 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+
     <GridView
         android:id="@+id/brokergridvi"
-        android:layout_width="407dp"
-        android:layout_height="493dp"
-        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
         android:background="#B3AE86"
-        android:horizontalSpacing="6dp"
-        android:numColumns="2"
         android:foreground="#0FEAE8DD"
-        android:verticalSpacing="6dp"
+        android:numColumns="2"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView2"></GridView>
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
