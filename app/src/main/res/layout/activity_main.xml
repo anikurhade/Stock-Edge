@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2B2A29"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="215dp"
+        android:layout_height="164dp"
+        android:layout_marginStart="96dp"
+        android:layout_marginTop="204dp"
+        android:fontFamily="@font/dm_mono_light"
+        android:text="Welcome\n
+To\n
+Stock Edge"
+        android:textAlignment="center"
+        android:textColor="#F8F5F5"
+        android:textSize="70px"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="270dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="532dp"
+
+        android:fontFamily="@font/manjari_thin"
+        android:text="Loading The Best Stocks For You "
+        android:textAlignment="center"
+        android:textColor="#F4ECEC"
+        android:textSize="40px"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
