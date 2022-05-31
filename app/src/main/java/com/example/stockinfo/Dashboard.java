@@ -48,10 +48,12 @@ public class Dashboard extends AppCompatActivity {
                 }
                 else if(position==1)
                 {
+                    startActivity(new Intent(getApplicationContext(),mutualfund.class));
 
                 }
                 else if(position==2)
                 {
+                    startActivity(new Intent(getApplicationContext(),crypto.class));
 
                 }
                 else if(position==3)
