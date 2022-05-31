@@ -90,11 +90,11 @@ class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder>
         public ViewHolder(View view) {
             super(view);
             images = (ImageView) view.findViewById(R.id.stockImg);
-            compname = (TextView) view.findViewById(R.id.discoinname);
-            high = (TextView) view.findViewById(R.id.dissymbol);
-            low = (TextView) view.findViewById(R.id.dismarketcap);
-            per = (TextView) view.findViewById(R.id.discoinpercent);
-            lastprice = (TextView) view.findViewById(R.id.dislatestcoinprice);
+            compname = (TextView) view.findViewById(R.id.disschmename);
+            high = (TextView) view.findViewById(R.id.dis1y);
+            low = (TextView) view.findViewById(R.id.dis3y);
+            per = (TextView) view.findViewById(R.id.disoption);
+            lastprice = (TextView) view.findViewById(R.id.dis5y);
 
         }
     }
