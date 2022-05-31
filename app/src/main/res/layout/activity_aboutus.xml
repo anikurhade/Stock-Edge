@@ -73,7 +73,7 @@
         android:layout_marginRight="20dp"
         android:fontFamily="@font/arsenal"
         android:orientation="horizontal"
-        android:text="1. Anirudha Kurhade\n2. Anirudha Kurhade\n3. Anirudha Kurhade\n4. Anirudha Kurhade"
+        android:text="1. Omkar Todarmal\n2. Sanket Solanke\n3. Yuvrajsing Solanke\n4. Chirag Shinde\n5. Shrutik Tambde"
         android:textAlignment="center"
         android:textSize="20dp"
         app:layout_constraintEnd_toEndOf="parent"
