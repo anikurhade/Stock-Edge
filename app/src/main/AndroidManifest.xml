@@ -13,6 +13,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.StockInfo">
         <activity
+            android:name=".mutualfund"
+            android:exported="false" />
+        <activity
+            android:name=".crypto"
+            android:exported="false" />
+        <activity
             android:name=".Aboutus"
             android:exported="false" />
         <activity
