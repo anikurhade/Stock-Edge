@@ -8,17 +8,6 @@
     android:background="#B3AE86"
     >
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/heading"
-        tools:ignore="NotSibling"
-        tools:srcCompat="@tools:sample/avatars" />
-
     <Button
         android:id="@+id/logout"
         android:layout_width="wrap_content"
@@ -30,17 +19,16 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/disemail" />
 
-    <Button
-        android:id="@+id/updateprof"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:onClick="Update"
-        android:text="Update Profile"
+    <ImageView
+        android:id="@+id/idIVcourse"
+        android:layout_width="161dp"
+        android:layout_height="145dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/avtar"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/logout" />
+        app:layout_constraintTop_toBottomOf="@+id/heading" />
 
     <Button
         android:id="@+id/updateprof2"
@@ -52,7 +40,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/updateprof" />
+        app:layout_constraintTop_toBottomOf="@+id/logout" />
 
     <TextView
         android:id="@+id/heading"
@@ -79,7 +67,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.137"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+        app:layout_constraintTop_toBottomOf="@+id/idIVcourse" />
 
     <TextView
         android:id="@+id/textvi3"
@@ -111,20 +99,21 @@
         android:id="@+id/disname"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="43dp"
+        android:layout_marginTop="40dp"
+
         android:fontFamily="@font/dm_mono_light"
-        android:textSize="15dp"
+        android:textSize="18dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/textvi"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+        app:layout_constraintTop_toBottomOf="@+id/idIVcourse" />
 
     <TextView
         android:id="@+id/disphone"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="28dp"
+        android:layout_marginTop="30dp"
         android:fontFamily="@font/dm_mono_light"
-        android:textSize="15dp"
+        android:textSize="18dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.501"
         app:layout_constraintStart_toEndOf="@+id/textvi"
@@ -134,9 +123,9 @@
         android:id="@+id/disemail"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="28dp"
+        android:layout_marginTop="30dp"
         android:fontFamily="@font/dm_mono_light"
-        android:textSize="15dp"
+        android:textSize="18dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.501"
         app:layout_constraintStart_toEndOf="@+id/textvi"
