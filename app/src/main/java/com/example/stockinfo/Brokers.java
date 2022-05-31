@@ -38,8 +38,8 @@ public class Brokers extends AppCompatActivity {
         brokeroptionsArrayList.add(new brokeroptions("Upstox",R.drawable.upstox11,(float)9.15));
         brokeroptionsArrayList.add(new brokeroptions("Groww",R.drawable.groww,(float)9.03));
         brokeroptionsArrayList.add(new brokeroptions("Motilal Oswal",R.drawable.motilalaoswal,(float)9.00));
-        brokeroptionsArrayList.add(new brokeroptions("ICICI Securities",R.drawable.icici,(float)8.86));
-        brokeroptionsArrayList.add(new brokeroptions("HDFC Securities",R.drawable.hdfc,(float)8.82));
+        brokeroptionsArrayList.add(new brokeroptions("ICICI Securities",R.drawable.icicistock,(float)8.86));
+        brokeroptionsArrayList.add(new brokeroptions("HDFC Securities",R.drawable.hdfcstock,(float)8.82));
         brokeroptionsArrayList.add(new brokeroptions("Edelweiss Securities",R.drawable.edelweiss,(float)8.75));
         brokeroptionsArrayList.add(new brokeroptions(" IIFL Securities",R.drawable.iifl,(float)8.48));
         brokeroptionsArrayList.add(new brokeroptions());
