@@ -14,6 +14,9 @@ public class userprofile extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_userprofile);
+        if (getSupportActionBar() != null) {
+            getSupportActionBar().hide();
+        }
     }
     public void GotoDashboard(View V)
     {
