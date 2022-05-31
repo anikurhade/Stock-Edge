@@ -3,6 +3,7 @@
     <array name="preloaded_fonts" translatable="false">
         <item>@font/</item>
         <item>@font/armata</item>
+        <item>@font/arsenal</item>
         <item>@font/dm_mono_light</item>
         <item>@font/manjari_thin</item>
     </array>
