@@ -36,7 +36,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
         <TextView
-            android:id="@+id/discoinname"
+            android:id="@+id/disschmename"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="20dp"
@@ -56,14 +56,14 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/companyname" />
         <TextView
-            android:id="@+id/dissymbol"
+            android:id="@+id/dis1y"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="15dp"
             android:layout_marginTop="5dp"
             android:text=""
             android:textStyle="bold"
-            app:layout_constraintTop_toBottomOf="@+id/discoinname"
+            app:layout_constraintTop_toBottomOf="@+id/disschmename"
             app:layout_constraintStart_toEndOf="@+id/high" />
 
         <TextView
@@ -74,17 +74,17 @@
             android:layout_marginTop="5dp"
             android:text="Market Cap :"
             android:textStyle="bold"
-            app:layout_constraintStart_toEndOf="@+id/dissymbol"
+            app:layout_constraintStart_toEndOf="@+id/dis1y"
             app:layout_constraintTop_toBottomOf="@+id/companyname" />
         <TextView
-            android:id="@+id/dismarketcap"
+            android:id="@+id/dis3y"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
             android:layout_marginTop="5dp"
             android:text=""
             android:textStyle="bold"
-            app:layout_constraintTop_toBottomOf="@+id/discoinname"
+            app:layout_constraintTop_toBottomOf="@+id/disschmename"
             app:layout_constraintStart_toEndOf="@+id/low" />
         <TextView
             android:id="@+id/lastprice"
@@ -97,7 +97,7 @@
             app:layout_constraintTop_toBottomOf="@+id/high"
             />
         <TextView
-            android:id="@+id/dislatestcoinprice"
+            android:id="@+id/dis5y"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
@@ -116,17 +116,17 @@
             android:layout_marginLeft="10dp"
             android:text="Change% in 7d :"
             android:textStyle="bold"
-            app:layout_constraintStart_toEndOf="@+id/dislatestcoinprice"
+            app:layout_constraintStart_toEndOf="@+id/dis5y"
             app:layout_constraintTop_toBottomOf="@+id/low" />
         <TextView
-            android:id="@+id/discoinpercent"
+            android:id="@+id/disoption"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
             android:layout_marginTop="5dp"
             android:text=""
             android:textStyle="bold"
-            app:layout_constraintTop_toBottomOf="@+id/dissymbol"
+            app:layout_constraintTop_toBottomOf="@+id/dis1y"
             app:layout_constraintStart_toEndOf="@+id/chngper" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
