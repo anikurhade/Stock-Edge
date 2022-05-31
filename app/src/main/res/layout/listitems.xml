@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="#B3AE86"
+    >
+
+    <!--For image src we have used ic_launcher
+        and for text "courseName" they are used
+        only for reference how it will looks"-->
+    <ImageView
+        android:id="@+id/stockImg"
+        android:layout_width="72dp"
+        android:layout_height="80dp"
+        android:padding="8dp"
+        android:src="@mipmap/ic_launcher_round" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constarintLayout"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        >
+
+        <TextView
+            android:id="@+id/companyname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Company Name :"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <TextView
+            android:id="@+id/discoinname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:text=""
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/companyname"
+            app:layout_constraintTop_toTopOf="parent" />
+        <TextView
+            android:id="@+id/high"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="High :"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/companyname"
+            />
+        <TextView
+            android:id="@+id/dissymbol"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="5dp"
+            android:text=""
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@+id/discoinname"
+            app:layout_constraintStart_toEndOf="@+id/high" />
+        <TextView
+            android:id="@+id/low"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:text="Low :"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/dissymbol"
+            app:layout_constraintTop_toBottomOf="@+id/companyname"
+            />
+        <TextView
+            android:id="@+id/dismarketcap"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="5dp"
+            android:text=""
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@+id/discoinname"
+            app:layout_constraintStart_toEndOf="@+id/low" />
+        <TextView
+            android:id="@+id/lastprice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:text="Latest Price :"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/dismarketcap"
+            app:layout_constraintTop_toBottomOf="@+id/companyname"
+            />
+        <TextView
+            android:id="@+id/dislatestcoinprice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="5dp"
+            android:text=""
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@+id/discoinname"
+            app:layout_constraintStart_toEndOf="@+id/lastprice" />
+        <TextView
+            android:id="@+id/chngper"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="Change % :"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/high"
+            />
+        <TextView
+            android:id="@+id/discoinpercent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="5dp"
+            android:text=""
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@+id/dissymbol"
+            app:layout_constraintStart_toEndOf="@+id/chngper" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>
