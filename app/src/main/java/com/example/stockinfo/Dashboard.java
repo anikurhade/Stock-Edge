@@ -44,7 +44,7 @@ public class Dashboard extends AppCompatActivity {
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 if(position==0)
                 {
-
+                    startActivity(new Intent(getApplicationContext(),Stocks.class));
                 }
                 else if(position==1)
                 {
@@ -64,7 +64,7 @@ public class Dashboard extends AppCompatActivity {
                 }
                 else if(position==5)
                 {
-
+                    startActivity(new Intent(getApplicationContext(),Aboutus.class));
                 }
 
 
