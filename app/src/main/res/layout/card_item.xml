@@ -6,13 +6,13 @@
     android:layout_width="match_parent"
     android:layout_height="120dp"
     android:layout_gravity="center"
-    android:layout_margin="5dp"
+    android:layout_marginLeft="2dp"
     app:cardCornerRadius="5dp"
     app:cardElevation="5dp"
     >
 
     <LinearLayout
-        android:layout_width="240dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
