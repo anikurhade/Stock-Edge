@@ -29,10 +29,11 @@
         android:layout_height="493dp"
         android:layout_marginTop="30dp"
         android:background="#B3AE86"
+        android:foreground="#0FEAE8DD"
         android:horizontalSpacing="6dp"
         android:numColumns="2"
-        android:foreground="#0FEAE8DD"
         android:verticalSpacing="6dp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView2"></GridView>
 
