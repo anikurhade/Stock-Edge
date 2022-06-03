@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#B3AE86"
-    tools:context=".MainActivity" >
+    android:background="@drawable/bgradietnt"
+    tools:context=".MainActivity">
 
     <TextView
         android:id="@+id/textView2"
@@ -32,8 +32,9 @@
         android:hint="Full Name"
         android:inputType="textPersonName"
         android:minHeight="48dp"
-        android:textColorHighlight="#000000"
-        android:textColorLink="#000000"
+        android:textColorHighlight="#050505"
+        android:textColorLink="#070707"
+        android:backgroundTint="#C9000000"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView2" />
@@ -51,6 +52,7 @@
         android:minHeight="48dp"
         android:textColorHighlight="#050505"
         android:textColorLink="#070707"
+        android:backgroundTint="#C9000000"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -67,8 +69,9 @@
         android:hint="Confirm Password"
         android:inputType="textPassword"
         android:minHeight="48dp"
-        android:textColorHighlight="#090909"
-        android:textColorLink="#020202"
+        android:textColorHighlight="#050505"
+        android:textColorLink="#070707"
+        android:backgroundTint="#C9000000"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -85,8 +88,9 @@
         android:hint="Email"
         android:inputType="textEmailAddress"
         android:minHeight="48dp"
-        android:textColor="#000000"
-        android:textColorLink="#000000"
+        android:textColorHighlight="#050505"
+        android:textColorLink="#070707"
+        android:backgroundTint="#C9000000"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -103,8 +107,9 @@
         android:hint="Phone Number"
         android:inputType="phone"
         android:minHeight="48dp"
-        android:textColorHighlight="#000000"
-        android:textColorLink="#000000"
+        android:textColorHighlight="#050505"
+        android:textColorLink="#070707"
+        android:backgroundTint="#C9000000"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -115,8 +120,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="18dp"
+        android:backgroundTint="#952A4D5A"
         android:text="Register"
-
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/passwordconf" />
@@ -133,14 +138,15 @@
 
     <Button
         android:id="@+id/regst"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
-        android:text="Login"
         android:onClick="onClickRegirecttosignup"
+        android:text="Login"
+        android:backgroundTint="#952A4D5A"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView4"
-        android:layout_width="wrap_content"
         tools:ignore="OnClick" />
 
     <ProgressBar
