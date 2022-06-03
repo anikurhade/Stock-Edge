@@ -6,18 +6,13 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="horizontal"
-    android:background="#B3AE86"
+    android:background="#B78FBDBD"
     >
 
     <!--For image src we have used ic_launcher
         and for text "courseName" they are used
         only for reference how it will looks"-->
-    <ImageView
-        android:id="@+id/stockImg"
-        android:layout_width="72dp"
-        android:layout_height="80dp"
-        android:padding="8dp"
-        android:src="@mipmap/ic_launcher_round" />
+
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constarintLayout"
@@ -25,7 +20,15 @@
         android:layout_height="wrap_content"
         android:paddingBottom="10dp"
         >
-
+        <ImageView
+            android:id="@+id/stockImg"
+            android:layout_width="72dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="3dp"
+            android:padding="8dp"
+            android:src="@mipmap/ic_launcher_round"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
         <TextView
             android:id="@+id/companyname"
             android:layout_width="wrap_content"
@@ -33,7 +36,7 @@
             android:layout_marginTop="10dp"
             android:text="Coin Name :"
             android:textStyle="bold"
-            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/stockImg"
             app:layout_constraintTop_toTopOf="parent" />
         <TextView
             android:id="@+id/disschmename"
@@ -53,7 +56,7 @@
             android:layout_marginTop="5dp"
             android:text="Symbol  :"
             android:textStyle="bold"
-            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/stockImg"
             app:layout_constraintTop_toBottomOf="@+id/companyname" />
         <TextView
             android:id="@+id/dis1y"
@@ -93,7 +96,7 @@
             android:layout_marginTop="5dp"
             android:text="Latest Price :"
             android:textStyle="bold"
-            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/stockImg"
             app:layout_constraintTop_toBottomOf="@+id/high"
             />
         <TextView
@@ -128,6 +131,16 @@
             android:textStyle="bold"
             app:layout_constraintTop_toBottomOf="@+id/dis1y"
             app:layout_constraintStart_toEndOf="@+id/chngper" />
+        <View
+            android:layout_width="370dp"
+            android:layout_height="2dp"
+            android:background="#66020202"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="0dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/chngper"
+
+            />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </LinearLayout>
