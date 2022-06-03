@@ -12,13 +12,15 @@
         android:id="@+id/textView2"
         android:layout_width="132dp"
         android:layout_height="38dp"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="48dp"
         android:fontFamily="@font/manjari_thin"
         android:orientation="horizontal"
         android:text="Login"
         android:textAlignment="center"
+        android:textColor="#040404"
         android:textSize="30dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -33,9 +35,11 @@
         android:hint="Email"
         android:inputType="textEmailAddress"
         android:minHeight="48dp"
-        android:textColorHighlight="#050505"
-        android:textColorLink="#070707"
         android:backgroundTint="#C9000000"
+        android:textColor="#000000"
+        android:textColorHighlight="#050505"
+        android:textColorHint="#C9090808"
+        android:textColorLink="#070707"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView2" />
@@ -47,15 +51,17 @@
         android:layout_marginStart="20dp"
         android:layout_marginTop="25dp"
         android:layout_marginEnd="20dp"
+        android:backgroundTint="#C9000000"
         android:ems="10"
         android:hint="Password"
         android:inputType="textPassword"
         android:minHeight="48dp"
+        android:textColor="#000000"
         android:textColorHighlight="#050505"
+        android:textColorHint="#C9090808"
         android:textColorLink="#070707"
-        android:backgroundTint="#C9000000"
+        android:textCursorDrawable="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/mail" />
 
@@ -64,12 +70,13 @@
         android:id="@+id/lgn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:text="Login"
+        android:layout_marginTop="15dp"
         android:backgroundTint="#952A4D5A"
+        android:text="Login"
+        android:textColor="#000000"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/passwordlgn" />
+        app:layout_constraintTop_toBottomOf="@+id/forgetpass" />
 
     <TextView
         android:id="@+id/textView4"
@@ -77,18 +84,31 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="5dp"
         android:text="Don't Have Account ?"
+        android:textColor="#E2101010"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/lgn" />
+
+    <TextView
+        android:id="@+id/forgetpass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Forgot Password"
+        android:textColor="#E2101010"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/passwordlgn" />
 
     <Button
         android:id="@+id/regst"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
+        android:backgroundTint="#952A4D5A"
         android:onClick="onClickRegirecttoregister"
         android:text="Register"
-        android:backgroundTint="#952A4D5A"
+        android:textColor="#000000"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView4"
