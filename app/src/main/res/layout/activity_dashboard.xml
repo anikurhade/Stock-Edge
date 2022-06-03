@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#B3AE86"
+    android:background="@drawable/bgradietnt"
     tools:context=".Dashboard"
 
     >
@@ -28,8 +28,7 @@
         android:layout_width="407dp"
         android:layout_height="493dp"
         android:layout_marginTop="30dp"
-        android:background="#B3AE86"
-        android:foreground="#0FEAE8DD"
+        android:background="#B78FBDBD"
         android:horizontalSpacing="6dp"
         android:numColumns="2"
         android:verticalSpacing="6dp"
