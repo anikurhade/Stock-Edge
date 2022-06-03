@@ -16,7 +16,7 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constarintLayout"
-        android:layout_width="330dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:paddingBottom="10dp"
         >
@@ -24,7 +24,7 @@
             android:id="@+id/stockImg"
             android:layout_width="72dp"
             android:layout_height="80dp"
-            android:layout_marginLeft="3dp"
+            android:layout_marginLeft="10dp"
             android:padding="8dp"
             android:src="@mipmap/ic_launcher_round"
             app:layout_constraintStart_toStartOf="parent"
@@ -132,7 +132,7 @@
             app:layout_constraintTop_toBottomOf="@+id/dis1y"
             app:layout_constraintStart_toEndOf="@+id/chngper" />
         <View
-            android:layout_width="370dp"
+            android:layout_width="wrap_content"
             android:layout_height="2dp"
             android:background="#66020202"
             android:layout_marginTop="10dp"
