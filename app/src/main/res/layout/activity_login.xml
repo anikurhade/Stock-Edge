@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Login"
-    android:background="#B3AE86">
+    android:background="@drawable/bgradietnt"
+    tools:context=".Login">
 
 
     <TextView
@@ -33,10 +33,9 @@
         android:hint="Email"
         android:inputType="textEmailAddress"
         android:minHeight="48dp"
-        android:textColorHighlight="#000000"
-        android:textColorHint="#000000"
-        android:textColorLink="#000000"
-        android:textCursorDrawable="@color/black"
+        android:textColorHighlight="#050505"
+        android:textColorLink="#070707"
+        android:backgroundTint="#C9000000"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView2" />
@@ -52,10 +51,9 @@
         android:hint="Password"
         android:inputType="textPassword"
         android:minHeight="48dp"
-        android:textColorHighlight="#040404"
-        android:textColorHint="#000000"
-        android:textColorLink="#0E0E0E"
-        android:textCursorDrawable="@color/black"
+        android:textColorHighlight="#050505"
+        android:textColorLink="#070707"
+        android:backgroundTint="#C9000000"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -68,7 +66,8 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:text="Login"
-  app:layout_constraintEnd_toEndOf="parent"
+        android:backgroundTint="#952A4D5A"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/passwordlgn" />
 
@@ -84,14 +83,15 @@
 
     <Button
         android:id="@+id/regst"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
-        android:text="Register"
         android:onClick="onClickRegirecttoregister"
+        android:text="Register"
+        android:backgroundTint="#952A4D5A"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView4"
-        android:layout_width="wrap_content"
         tools:ignore="OnClick" />
 
     <ProgressBar
@@ -100,6 +100,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="35dp"
+        android:backgroundTint="#AD131010"
         android:visibility="invisible"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
