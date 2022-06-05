@@ -21,130 +21,47 @@
         android:layout_height="wrap_content"
         android:paddingBottom="10dp"
         >
-        <ImageView
-            android:id="@+id/stockImg"
-            android:layout_width="72dp"
-            android:layout_height="80dp"
-            android:layout_marginLeft="3dp"
-            android:padding="8dp"
-            android:src="@mipmap/ic_launcher_round"
+        <TextView
+            android:id="@+id/srno"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:text=""
+            android:textSize="20dp"
+            android:textStyle="bold"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
+
+
 
         <TextView
             android:id="@+id/companyname"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:layout_marginLeft="5dp"
+            android:layout_marginLeft="20dp"
             android:text="Company Name :"
+            android:textSize="20dp"
             android:textStyle="bold"
-            app:layout_constraintStart_toEndOf="@+id/stockImg"
+            app:layout_constraintStart_toEndOf="@id/srno"
             app:layout_constraintTop_toTopOf="parent" />
+
         <TextView
             android:id="@+id/disschmename"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="15dp"
             android:layout_marginTop="10dp"
+            android:fontFamily="@font/arsenal"
             android:text=""
+            android:textSize="18dp"
             android:textStyle="bold"
             app:layout_constraintStart_toEndOf="@+id/companyname"
             app:layout_constraintTop_toTopOf="parent" />
-        <TextView
-            android:id="@+id/high"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="5dp"
-            android:layout_marginLeft="5dp"
-            android:text="High :"
-            android:textStyle="bold"
-            app:layout_constraintStart_toEndOf="@+id/stockImg"
-            app:layout_constraintTop_toBottomOf="@+id/companyname"
-            />
-        <TextView
-            android:id="@+id/dis1y"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="15dp"
-            android:layout_marginTop="5dp"
-            android:text=""
-            android:textStyle="bold"
-            app:layout_constraintTop_toBottomOf="@+id/disschmename"
-            app:layout_constraintStart_toEndOf="@+id/high" />
-        <TextView
-            android:id="@+id/low"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="5dp"
-            android:layout_marginLeft="10dp"
-            android:text="Low :"
-            android:textStyle="bold"
-            app:layout_constraintStart_toEndOf="@+id/dis1y"
-            app:layout_constraintTop_toBottomOf="@+id/companyname"
-            />
-        <TextView
-            android:id="@+id/dis3y"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="15dp"
-            android:layout_marginTop="5dp"
-            android:text=""
-            android:textStyle="bold"
-            app:layout_constraintTop_toBottomOf="@+id/disschmename"
-            app:layout_constraintStart_toEndOf="@+id/low" />
-        <TextView
-            android:id="@+id/lastprice"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="5dp"
-            android:layout_marginTop="5dp"
-            android:text="Latest Price :"
-            android:textStyle="bold"
-            app:layout_constraintStart_toEndOf="@+id/stockImg"
-            app:layout_constraintTop_toBottomOf="@+id/high"
-            />
-        <TextView
-            android:id="@+id/dis5y"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="15dp"
-            android:layout_marginTop="5dp"
-            android:text=""
-            android:textStyle="bold"
-            app:layout_constraintTop_toBottomOf="@+id/high"
-            app:layout_constraintStart_toEndOf="@+id/lastprice" />
-        <TextView
-            android:id="@+id/chngper"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="5dp"
-            android:layout_marginLeft="10dp"
-            android:text="Change % :"
-            android:textStyle="bold"
-            app:layout_constraintStart_toEndOf="@+id/dis5y"
-            app:layout_constraintTop_toBottomOf="@+id/high"
-            />
-        <TextView
-            android:id="@+id/disoption"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="15dp"
-            android:layout_marginTop="5dp"
-            android:text=""
-            android:textStyle="bold"
-            app:layout_constraintTop_toBottomOf="@+id/dis3y"
-            app:layout_constraintStart_toEndOf="@+id/chngper" />
-        <View
-            android:layout_width="wrap_content"
-            android:layout_height="2dp"
-            android:background="#66020202"
-            android:layout_marginTop="10dp"
-            android:layout_marginLeft="0dp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/lastprice"
 
-            />
+
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </LinearLayout>
