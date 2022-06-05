@@ -33,10 +33,9 @@
         <!--RecyclerView-->
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/recyclerView"
-            android:layout_width="match_parent"
+            android:layout_width="@dimen/browser_actions_context_menu_max_width"
             android:layout_height="match_parent"
-            android:paddingBottom="40dp" />
-
-    </LinearLayout>
+             />
+ </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
