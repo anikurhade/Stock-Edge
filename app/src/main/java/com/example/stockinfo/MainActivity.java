@@ -10,6 +10,10 @@ public class MainActivity extends AppCompatActivity {
     private static int WELCOME_TIMEOUT = 4000;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        if (getSupportActionBar() != null) {
+        getSupportActionBar().hide();
+    }
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         new Handler().postDelayed(new Runnable () {
