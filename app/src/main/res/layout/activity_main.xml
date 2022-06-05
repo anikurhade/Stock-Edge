@@ -13,7 +13,7 @@
         android:layout_width="178dp"
         android:layout_height="172dp"
         android:layout_gravity="center"
-        android:layout_marginTop="150dp"
+        android:layout_marginTop="200dp"
         android:src="@drawable/logosample"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
