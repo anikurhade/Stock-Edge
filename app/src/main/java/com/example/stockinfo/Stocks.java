@@ -27,18 +27,7 @@ public class Stocks extends AppCompatActivity {
         RecyclerView rv;
         ArrayList<Stock> stockArrayList=new ArrayList<>();
         rv=findViewById(R.id.recyclerView);
-        stockArrayList.add(new Stock(R.drawable.mrf,"MRF","75900.0","75999.90","62944.5","0.73"));
-        stockArrayList.add(new Stock(R.drawable.tcs,"TCS","3368.40","3383.40","3325.0","-0.2"));
-        stockArrayList.add(new Stock(R.drawable.titan,"Titan","2204.90","2176.90","2090.5","-2.73"));
-        stockArrayList.add(new Stock(R.drawable.tatapower,"Tata Power","230.0","399.90","204.5","1.73"));
-        stockArrayList.add(new Stock(R.drawable.tatamotor,"Tata Motors","75900.0","75999.90","62944.5","0.73"));
-        stockArrayList.add(new Stock(R.drawable.relianceindustries,"Reliance Industries","75900.0","75999.90","62944.5","0.73"));
-        stockArrayList.add(new Stock(R.drawable.reliancepower,"Reliance Power","75900.0","75999.90","62944.5","0.73"));
-        stockArrayList.add(new Stock(R.drawable.coalindia,"Coal India","75900.0","75999.90","62944.5","0.73"));
-        stockArrayList.add(new Stock(R.drawable.ongc,"ONGC","75900.0","75999.90","62944.5","0.73"));
-        stockArrayList.add(new Stock(R.drawable.adanipower,"Adani Power","75900.0","75999.90","62944.5","0.73"));
-        stockArrayList.add(new Stock(R.drawable.adaniwillmar,"Adani Wilmar","75900.0","75999.90","62944.5","0.73"));
-        stockArrayList.add(new Stock(R.drawable.hal,"HAL","75900.0","75999.90","62944.5","0.73"));
+
         LinearLayoutManager linearLayoutManager=new LinearLayoutManager(getApplicationContext());
         rv.setLayoutManager(linearLayoutManager);
         Adapter adapter=new Adapter(stockArrayList,Stocks.this);
@@ -58,12 +47,9 @@ class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder>
     @Override
     public void onBindViewHolder(@NonNull Adapter.ViewHolder holder, int position) {
         Stock s=stockArrayList.get(position);
-        holder.images.setImageResource(s.getImgid());
         holder.compname.setText((String)s.getCompanyname());
-        holder.high.setText((String) s.getHigh());
-        holder.low.setText((String)s.getLow());
-        holder.lastprice.setText((String)s.getPrice());
-        holder.per.setText((String) s.getChng());
+        holder.high.setText((String) s.getSrno());
+
 
 
     }
@@ -84,17 +70,14 @@ class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder>
     }
 
     public class ViewHolder extends RecyclerView.ViewHolder {
-        ImageView images;
-        TextView compname,high,low,per,lastprice;
+
+        TextView compname,high;
 
         public ViewHolder(View view) {
             super(view);
-            images = (ImageView) view.findViewById(R.id.stockImg);
             compname = (TextView) view.findViewById(R.id.disschmename);
-            high = (TextView) view.findViewById(R.id.dis1y);
-            low = (TextView) view.findViewById(R.id.dis3y);
-            per = (TextView) view.findViewById(R.id.disoption);
-            lastprice = (TextView) view.findViewById(R.id.dis5y);
+            high = (TextView) view.findViewById(R.id.srno);
+
 
         }
     }
@@ -103,16 +86,15 @@ class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder>
 
 class Stock
 {
-    private int imgid;
+    private String srno;
     private  String Companyname;
-    private String price, high,low,chng;
 
-    public int getImgid() {
-        return imgid;
+    public String getSrno() {
+        return srno;
     }
 
-    public void setImgid(int imgid) {
-        this.imgid = imgid;
+    public void setSrno(String srno) {
+        this.srno = srno;
     }
 
     public String getCompanyname() {
@@ -123,44 +105,8 @@ class Stock
         Companyname = companyname;
     }
 
-    public String getPrice() {
-        return price;
-    }
-
-    public void setPrice(String price) {
-        this.price = price;
-    }
-
-    public String getHigh() {
-        return high;
-    }
-
-    public void setHigh(String high) {
-        this.high = high;
-    }
-
-    public String getLow() {
-        return low;
-    }
-
-    public void setLow(String low) {
-        this.low = low;
-    }
-
-    public String getChng() {
-        return chng;
-    }
-
-    public void setChng(String chng) {
-        this.chng = chng;
-    }
-
-    public Stock(int imgid, String companyname, String price, String high, String low, String chng) {
-        this.imgid = imgid;
+    public Stock(String srno, String companyname) {
+        this.srno = srno;
         Companyname = companyname;
-        this.price = price;
-        this.high = high;
-        this.low = low;
-        this.chng = chng;
     }
 }
