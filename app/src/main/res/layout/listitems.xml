@@ -26,26 +26,13 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:layout_marginLeft="10dp"
+            android:layout_marginLeft="15dp"
             android:text=""
             android:textSize="20dp"
             android:textStyle="bold"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-
-
-        <TextView
-            android:id="@+id/companyname"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:layout_marginLeft="20dp"
-            android:text="Company Name :"
-            android:textSize="20dp"
-            android:textStyle="bold"
-            app:layout_constraintStart_toEndOf="@id/srno"
-            app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
             android:id="@+id/disschmename"
@@ -55,12 +42,21 @@
             android:layout_marginTop="10dp"
             android:fontFamily="@font/arsenal"
             android:text=""
-            android:textSize="18dp"
+            android:textSize="20dp"
             android:textStyle="bold"
-            app:layout_constraintStart_toEndOf="@+id/companyname"
+            app:layout_constraintStart_toEndOf="@+id/srno"
             app:layout_constraintTop_toTopOf="parent" />
 
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="2dp"
+            android:background="#66020202"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="0dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/srno"
 
+            />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
