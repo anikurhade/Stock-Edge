@@ -26,7 +26,7 @@
     <GridView
         android:id="@+id/gridvi"
         android:layout_width="407dp"
-        android:layout_height="493dp"
+        android:layout_height="540dp"
         android:layout_marginTop="30dp"
         android:background="#B78FBDBD"
         android:horizontalSpacing="6dp"

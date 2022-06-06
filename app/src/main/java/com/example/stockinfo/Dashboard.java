@@ -31,12 +31,14 @@ public class Dashboard extends AppCompatActivity {
         setContentView(R.layout.activity_dashboard);
         options=findViewById(R.id.gridvi);
         ArrayList<dashboardoption> dasboarddoptionArraylist =new ArrayList<dashboardoption>();
+        dasboarddoptionArraylist.add(new dashboardoption("Learn",R.drawable.learn));
         dasboarddoptionArraylist.add(new dashboardoption("Stocks",R.drawable.stocks));
         dasboarddoptionArraylist.add(new dashboardoption("Mutual Funds",R.drawable.mutualfund));
         dasboarddoptionArraylist.add(new dashboardoption("Crypto",R.drawable.crypto));
         dasboarddoptionArraylist.add(new dashboardoption("Brokers",R.drawable.broker));
         dasboarddoptionArraylist.add(new dashboardoption("Profile",R.drawable.profile));
         dasboarddoptionArraylist.add(new dashboardoption("About Us",R.drawable.aboutus));
+        dasboarddoptionArraylist.add(new dashboardoption("Logout",R.drawable.logout));
         OptionAdapter op=new OptionAdapter(this, dasboarddoptionArraylist);
         options.setAdapter(op);
         options.setOnItemClickListener(new AdapterView.OnItemClickListener() {
@@ -44,31 +46,39 @@ public class Dashboard extends AppCompatActivity {
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 if(position==0)
                 {
+                    startActivity(new Intent(getApplicationContext(),learn.class));
+                }if(position==1)
+                {
                     startActivity(new Intent(getApplicationContext(),Stocks.class));
                 }
-                else if(position==1)
+                else if(position==2)
                 {
                     startActivity(new Intent(getApplicationContext(),mutualfund.class));
 
                 }
-                else if(position==2)
+                else if(position==3)
                 {
                     startActivity(new Intent(getApplicationContext(),crypto.class));
 
                 }
-                else if(position==3)
+                else if(position==4)
                 {
                     startActivity(new Intent(getApplicationContext(),Brokers.class));
                 }
-                else if(position==4)
+                else if(position==5)
                 {
                     startActivity(new Intent(getApplicationContext(),userprofile.class));
                 }
-                else if(position==5)
+                else if(position==6)
                 {
                     startActivity(new Intent(getApplicationContext(),Aboutus.class));
                 }
-
+                else if(position==7)
+                {
+                    FirebaseAuth.getInstance().signOut();
+                    startActivity(new Intent(getApplicationContext(),Login.class));
+                    finish();
+                }
 
             }
         });
