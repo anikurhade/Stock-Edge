@@ -118,6 +118,7 @@ public class Register extends AppCompatActivity {
 
 
     }
+
     public void onClickRegirecttosignup(View view)
     {
         Intent i = new Intent(Register.this,Login.class);
