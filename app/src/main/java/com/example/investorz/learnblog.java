@@ -28,10 +28,10 @@ public class learnblog extends AppCompatActivity implements LearnAdapter.ViewHol
         RecyclerView rv;
         ArrayList<Learn> learninfoList=new ArrayList<>();
         rv=findViewById(R.id.learnrecyclerView);
-        learninfoList.add(new Learn("How to Invest in the Stock Market for Beginners?","Investing in the stock market for beginners is one of the best \nways to create a sustainable pool of savings.When searching for the best \nway to multiply the money you saved, what’s the first thought that \ncomes to your mind?\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t...Read More"));
-        learninfoList.add(new Learn("7 Best Indian Stock Market Blogs to Follow","If you are looking for a few best Indian stock market \nblogs to follow,then you have reached the right place. Although there are hundreds \nof stock investing blogs in India, however, in this post we have hand-picked \n7 best Indian stock market blogs that every Indian equity \ninvestor should follow\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t...Read More"));
-        learninfoList.add(new Learn("Demonetization Impact on the Stock Market \n and Stock Investors","Under normal conditions, the investors \nare bullish or bearish on certain sectors. The overall bullish trend in the \nstock market does not mean that all the sectors are expected to perform well. \nFor example, PSU and metal stocks are underperforming despite \nbullish trend.\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t...Read More"));
-        learninfoList.add(new Learn("Top 5 Stock Market YouTube Channels In India","People today are increasingly becoming financially aware. \nThe stock market has become the buzzword – all the more with ‘Scam 1992’ playing \non every other device – and we’re all looking for ways to navigate the market \nsuccessfully.We bring you a comprehensive list of the best Indian \nstock market YouTubers that can help you leverage your YouTube influencer marketing.\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t...Read More"));
+        learninfoList.add(new Learn("How to Invest in the Stock Market for Beginners ?","Investing in the stock market for beginners is one of the\nbest ways to create a sustainable pool of savings.When\nsearching for the best way to multiply the money you\nsaved, what’s the first thought that comes to your mind?\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t...Read More"));
+        learninfoList.add(new Learn("7 Best Indian Stock Market Blogs to Follow","If you are looking for a few best Indian stock market blogs\nto follow,then you have reached the right place. Although\nthere are hundreds of stock investing blogs in India,\nhowever, in this post we have hand-picked 7 best Indian\nstock market blogs that every Indian equity investor \nshould follow\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t...Read More"));
+        learninfoList.add(new Learn("Demonetization Impact on the Stock Market \nand Stock Investors","Under normal conditions, the investors are bullish or\nbearish on certain sectors. The overall bullish trend in\nthe stock market does not mean that all the sectors are\nexpected to perform well. For example, PSU and\nmetal stocks are underperforming despite bullish trend.\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t...Read More"));
+        learninfoList.add(new Learn("Top 5 Stock Market YouTube Channels In India","People today are increasingly becoming financially aware.\nThe stock market has become the buzzword – all the\nmore with ‘Scam 1992’ playing on every other device\nand we’re all looking for ways to navigate the market\nsuccessfully.We bring you a comprehensive list of the\nbest Indian stock market YouTubers that can help you \nleverage your YouTube influencer marketing.\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t...Read More"));
 
         LinearLayoutManager linearLayoutManager=new LinearLayoutManager(getApplicationContext());
         rv.setLayoutManager(linearLayoutManager);
@@ -50,10 +50,10 @@ public class learnblog extends AppCompatActivity implements LearnAdapter.ViewHol
             startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://tradebrains.in/7-best-indian-stock-market-blogs/")));
         }if(postion==2)
         {
-            startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(" https://www.nitinbhatia.in/stocks/demonetization-impact-stock-market/")));
+            startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.motilaloswal.com/blog-details/Demonetization-Effect-on-Share-Market/1157")));
         }if(postion==3)
         {
-            startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.elearnmarkets.com/blog/stock-market-for-beginners-in-2019/")));
+            startActivity(new Intent(getApplicationContext(), blog1.class));
         }
     }
 

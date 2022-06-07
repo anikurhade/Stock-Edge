@@ -13,44 +13,45 @@
         android:largeHeap="true"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.StockInfo"
-
-        >
+        android:theme="@style/Theme.StockInfo">
         <activity
-            android:name="com.example.investorz.learnblog"
+            android:name=".blog1"
             android:exported="false" />
         <activity
-            android:name="com.example.investorz.forgetpassword"
+            android:name=".learnblog"
             android:exported="false" />
         <activity
-            android:name="com.example.investorz.mutualfund"
+            android:name=".forgetpassword"
             android:exported="false" />
         <activity
-            android:name="com.example.investorz.crypto"
+            android:name=".mutualfund"
             android:exported="false" />
         <activity
-            android:name="com.example.investorz.Aboutus"
+            android:name=".crypto"
             android:exported="false" />
         <activity
-            android:name="com.example.investorz.Stocks"
+            android:name=".Aboutus"
             android:exported="false" />
         <activity
-            android:name="com.example.investorz.Brokers"
+            android:name=".Stocks"
             android:exported="false" />
         <activity
-            android:name="com.example.investorz.userprofile"
+            android:name=".Brokers"
             android:exported="false" />
         <activity
-            android:name="com.example.investorz.Dashboard"
+            android:name=".userprofile"
             android:exported="false" />
         <activity
-            android:name="com.example.investorz.Register"
+            android:name=".Dashboard"
             android:exported="false" />
         <activity
-            android:name="com.example.investorz.Login"
+            android:name=".Register"
             android:exported="false" />
         <activity
-            android:name="com.example.investorz.MainActivity"
+            android:name=".Login"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/bgradietnt"
-    tools:context=".Login">
+    tools:context=".blog1">
 
 
     <ScrollView
@@ -69,14 +69,87 @@
                 android:layout_marginTop="14dp"
                 android:layout_marginRight="15dp"
                 android:fontFamily="@font/armata"
-
+                android:layout_gravity="center"
                 android:text="1. Finnovation"
                 android:textSize="16dp"
+                android:onClick="GotoDFinnovation"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.15"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/textView" />
-
+            <TextView
+                android:id="@+id/kamra"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:layout_marginRight="15dp"
+                android:fontFamily="@font/armata"
+                android:layout_gravity="center"
+                android:text="2. Prakash Kamra"
+                android:textSize="16dp"
+                android:onClick="Gotoprakshkamra"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.15"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/finnovat" />
+            <TextView
+                android:id="@+id/caranchana"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:layout_marginRight="15dp"
+                android:fontFamily="@font/armata"
+                android:layout_gravity="center"
+                android:onClick="Gotocarachnac"
+                android:text="3. CA Rachana Phadke Ranade"
+                android:textSize="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.15"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/kamra" />
+            <TextView
+                android:id="@+id/elearn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:layout_marginRight="15dp"
+                android:fontFamily="@font/armata"
+                android:layout_gravity="center"
+                android:text="4. Elearn Markets"
+                android:textSize="16dp"
+                android:onClick="Gotoelearn"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.15"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/finnovat" />
+            <TextView
+                android:id="@+id/sunilmig"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:layout_marginRight="15dp"
+                android:fontFamily="@font/armata"
+                android:layout_gravity="center"
+                android:text="5. Sunil Miglani"
+                android:textSize="16dp"
+                android:onClick="Gotosuniil"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.15"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/finnovat" />
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="5dp"
+                android:fontFamily="@font/armata"
+                android:text="            With the help of youtube channels, you can find online mentors who can help you to make your investing journey a lot easier. Further, interacting with Youtubers is also not very difficult. You can simply leave a comment on the videos and if the Youtuber is active, most likely, you’ll get the reply."
+                android:textSize="15dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/idIVcourse" />
             <Button
                 android:id="@+id/regst"
                 android:layout_width="wrap_content"
@@ -84,7 +157,7 @@
                 android:layout_gravity="center"
                 android:layout_marginTop="10dp"
                 android:backgroundTint="#952A4D5A"
-                android:onClick="onClickRegirecttoregister"
+                android:onClick="GotoDashboard"
                 android:text="Go Back To Dashboard"
                 android:textColor="#000000"
                 app:layout_constraintEnd_toEndOf="parent"
