@@ -1,4 +1,4 @@
-package com.example.stockinfo;
+package com.example.investorz;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
