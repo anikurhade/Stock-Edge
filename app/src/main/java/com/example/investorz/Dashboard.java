@@ -1,4 +1,4 @@
-package com.example.stockinfo;
+package com.example.investorz;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -46,7 +46,7 @@ public class Dashboard extends AppCompatActivity {
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 if(position==0)
                 {
-                    startActivity(new Intent(getApplicationContext(),learn.class));
+                    startActivity(new Intent(getApplicationContext(),learnblog.class));
                 }if(position==1)
                 {
                     startActivity(new Intent(getApplicationContext(),Stocks.class));
