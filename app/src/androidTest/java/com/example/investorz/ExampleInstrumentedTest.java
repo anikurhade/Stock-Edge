@@ -1,4 +1,4 @@
-package com.example.stockinfo;
+package com.example.investorz;
 
 import android.content.Context;
 

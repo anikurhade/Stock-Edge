@@ -7,6 +7,35 @@
   "client": [
     {
       "client_info": {
+        "mobilesdk_app_id": "1:460171489274:android:c17455a42fa22231f2fe43",
+        "android_client_info": {
+          "package_name": "com.example.investorz"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "460171489274-lapoo1m8nspvpnsc0mrm4muteg8tbnql.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDyzWJSavYaZ9E3LXAPaTPd-mbtI3jtyVM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "460171489274-lapoo1m8nspvpnsc0mrm4muteg8tbnql.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
         "mobilesdk_app_id": "1:460171489274:android:4d7b948ebffbfaf1f2fe43",
         "android_client_info": {
           "package_name": "com.example.stockinfo"
