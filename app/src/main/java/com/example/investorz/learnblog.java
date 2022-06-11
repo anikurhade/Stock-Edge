@@ -32,8 +32,7 @@ public class learnblog extends AppCompatActivity implements LearnAdapter.ViewHol
         learninfoList.add(new Learn("7 Best Indian Stock Market Blogs to Follow","If you are looking for a few best Indian stock market blogs\nto follow,then you have reached the right place. Although\nthere are hundreds of stock investing blogs in India,\nhowever, in this post we have hand-picked 7 best Indian\nstock market blogs that every Indian equity investor \nshould follow\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t...Read More"));
         learninfoList.add(new Learn("Demonetization Impact on the Stock Market \nand Stock Investors","Under normal conditions, the investors are bullish or\nbearish on certain sectors. The overall bullish trend in\nthe stock market does not mean that all the sectors are\nexpected to perform well. For example, PSU and\nmetal stocks are underperforming despite bullish trend.\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t...Read More"));
         learninfoList.add(new Learn("Top 5 Stock Market YouTube Channels In India","People today are increasingly becoming financially aware.\nThe stock market has become the buzzword – all the\nmore with ‘Scam 1992’ playing on every other device\nand we’re all looking for ways to navigate the market\nsuccessfully.We bring you a comprehensive list of the\nbest Indian stock market YouTubers that can help you \nleverage your YouTube influencer marketing.\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t...Read More"));
-
-        LinearLayoutManager linearLayoutManager=new LinearLayoutManager(getApplicationContext());
+         LinearLayoutManager linearLayoutManager=new LinearLayoutManager(getApplicationContext());
         rv.setLayoutManager(linearLayoutManager);
         LearnAdapter adapter=new LearnAdapter(learninfoList,learnblog.this, this);
         rv.setAdapter(adapter);

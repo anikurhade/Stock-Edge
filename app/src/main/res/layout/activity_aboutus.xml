@@ -41,7 +41,7 @@
         android:layout_marginRight="20dp"
         android:fontFamily="@font/arsenal"
         android:orientation="horizontal"
-        android:text="Stock-Edge Is An App That Helps Young Investor For Better Investment Knowledge And Learning.
+        android:text="Investorz Is An App That Helps Young Investor For Better Investment Knowledge And Learning.
                                                     It helps The Beginner To Understand The market And take investment decisions Accordingly "
         android:textAlignment="center"
         android:textSize="20dp"
